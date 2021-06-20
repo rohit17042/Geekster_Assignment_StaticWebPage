@@ -1,2 +1,2 @@
 # Geekster_Assignment_StaticWebPage
-Here I have kept files of my static web pages.
+Hey there! Here I have kept files of my static web pages.
