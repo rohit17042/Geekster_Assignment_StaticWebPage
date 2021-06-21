@@ -89,16 +89,16 @@
             cursor: pointer;
         }
 
-        .query{
+        .query {
             margin-bottom: 10px;
         }
 
-        .radio-option{
+        .radio-option {
             display: inline-block;
             cursor: pointer;
         }
 
-        .radio-option *{
+        .radio-option * {
             cursor: pointer;
         }
 
@@ -125,7 +125,7 @@
                         <label for="fname">Full Name</label>
                     </div>
                     <div class="col-9">
-                        <input type="text" id="fname" name="fname" required/>
+                        <input type="text" id="fname" name="fname" required />
                     </div>
                 </div>
                 <div class="row">
@@ -133,7 +133,7 @@
                         <label for="gender">Gender</label>
                     </div>
                     <div class="col-9">
-                        <select id="gender" name="gender" required>
+                        <select id="gender" name="gender">
                             <option value="empty">---</option>
                             <option value="male">Male</option>
                             <option value="female">Female</option>
@@ -146,7 +146,7 @@
                         <label for="email">Email ID</label>
                     </div>
                     <div class="col-9">
-                        <input type="email" id="email" name="email" required/>
+                        <input type="email" id="email" name="email" required />
                     </div>
                 </div>
                 <div class="row">
@@ -154,7 +154,8 @@
                         <label for="mobile">Phone Number</label>
                     </div>
                     <div class="col-9">
-                        <input type="number" id="mobile" name="mobile" pattern="[0-9]{10}" required/>
+                        <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}"
+                            placeholder="Enter 10-digit mobile numer" required />
                     </div>
                 </div>
                 <div class="row">
@@ -162,7 +163,7 @@
                         <label for="linkedin">LinkedIn Profile URL</label>
                     </div>
                     <div class="col-9">
-                        <input type="url" id="linkedin" name="linkedin"/>
+                        <input type="url" id="linkedin" name="linkedin" />
                     </div>
                 </div>
             </fieldset>
@@ -210,9 +211,9 @@
                             <option value="2023">2023</option>
                             <option value="2022">2022</option>
                             <option value="2021">2021</option>
-                            <option  value="2020">2020</option>
-                            <option  value="2019">2019</option>
-                            <option  value="2018">2018</option>
+                            <option value="2020">2020</option>
+                            <option value="2019">2019</option>
+                            <option value="2018">2018</option>
                             <option value="2017">2017</option>
                             <option value="other">Other</option>
                         </select>
@@ -225,11 +226,12 @@
                     <label>Are you a student?</label>
                     <div style="display: inline-block;">
                         <div class="radio-option">
-                            <input type="radio" id="yes" name="student-question" value="yes"  onclick="hide()"/>
+                            <input type="radio" id="yes" name="student-question" value="yes" onclick="hide()" />
                             <label for="yes">Yes</label>
                         </div>
                         <div class="radio-option">
-                            <input type="radio" id="no" name="student-question" value="no" checked onclick="display()"/>
+                            <input type="radio" id="no" name="student-question" value="no" checked
+                                onclick="display()" />
                             <label for="no">No</label>
                         </div>
                     </div>
@@ -248,7 +250,7 @@
                             <label for="salary">Current Salary</label>
                         </div>
                         <div class="col-9">
-                            <input type="text" id="salary" name="salary"/>
+                            <input type="text" id="salary" name="salary" />
                         </div>
                     </div>
                     <div class="row">
@@ -267,7 +269,7 @@
                         </div>
                     </div>
                     <div>
-                        <input type="checkbox" id="isCurrentJob" name="isCurrentJob" checked/>
+                        <input type="checkbox" id="isCurrentJob" name="isCurrentJob" checked />
                         <label for="isCurrentJob">This is your current job</label>
                     </div>
                 </div>
@@ -275,7 +277,8 @@
             <fieldset class="info">
                 <div>
                     <label for="additional-comment">Additional Comments: </label>
-                    <textarea id="additional-comment" name="additional-comment" style="height: 100px; margin: 10px 0;"></textarea>
+                    <textarea id="additional-comment" name="additional-comment"
+                        style="height: 100px; margin: 10px 0;"></textarea>
                 </div>
                 <div>
                     <label for="resume"><b>Upload Resume</b></label><br>
@@ -292,12 +295,12 @@
 
     <script>
 
-        function hide(){
+        function hide() {
             var element = document.getElementById("employment-details");
             element.style.display = "none";
         }
-        
-        function display(){
+
+        function display() {
             var element = document.getElementById("employment-details");
             element.style.display = "block";
         }
