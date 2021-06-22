@@ -67,7 +67,7 @@
         .row:after {
             content: "";
             display: table;
-            clear: right;
+            clear: both;
         }
 
         input[type="submit"],
@@ -102,7 +102,7 @@
             cursor: pointer;
         }
 
-        @media screen and (max-width: 600px) {
+        @media screen and (max-width: 778px) {
             body {
                 width: 90%;
             }
@@ -125,7 +125,7 @@
                         <label for="fname">Full Name</label>
                     </div>
                     <div class="col-9">
-                        <input type="text" id="fname" name="fname" required >
+                        <input type="text" id="fname" name="fname" required>
                     </div>
                 </div>
                 <div class="row">
@@ -146,7 +146,7 @@
                         <label for="email">Email ID</label>
                     </div>
                     <div class="col-9">
-                        <input type="email" id="email" name="email" required >
+                        <input type="email" id="email" name="email" required>
                     </div>
                 </div>
                 <div class="row">
@@ -155,7 +155,7 @@
                     </div>
                     <div class="col-9">
                         <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}"
-                            placeholder="Enter 10-digit mobile number" required >
+                            placeholder="Enter 10-digit mobile number" required>
                     </div>
                 </div>
                 <div class="row">
@@ -163,7 +163,7 @@
                         <label for="linkedin">LinkedIn Profile URL</label>
                     </div>
                     <div class="col-9">
-                        <input type="url" id="linkedin" name="linkedin" >
+                        <input type="url" id="linkedin" name="linkedin">
                     </div>
                 </div>
             </fieldset>
@@ -189,7 +189,7 @@
                         <label for="branch">Highest Degree Branch</label>
                     </div>
                     <div class="col-9">
-                        <input type="text" id="branch" name="branch" >
+                        <input type="text" id="branch" name="branch">
                     </div>
                 </div>
                 <div class="row">
@@ -197,7 +197,7 @@
                         <label for="college">Highest Degree College</label>
                     </div>
                     <div class="col-9">
-                        <input type="text" id="college" name="college" >
+                        <input type="text" id="college" name="college">
                     </div>
                 </div>
                 <div class="row">
@@ -226,12 +226,11 @@
                     <label>Are you a student?</label>
                     <div style="display: inline-block;">
                         <div class="radio-option">
-                            <input type="radio" id="yes" name="student-question" value="yes" onclick="hide()" >
+                            <input type="radio" id="yes" name="student-question" value="yes" onclick="hide()">
                             <label for="yes">Yes</label>
                         </div>
                         <div class="radio-option">
-                            <input type="radio" id="no" name="student-question" value="no" checked
-                                onclick="display()" >
+                            <input type="radio" id="no" name="student-question" value="no" checked onclick="display()">
                             <label for="no">No</label>
                         </div>
                     </div>
@@ -242,7 +241,7 @@
                             <label for="job-title">Job Title</label>
                         </div>
                         <div class="col-9">
-                            <input type="text" id="job-title" name="job-title" >
+                            <input type="text" id="job-title" name="job-title">
                         </div>
                     </div>
                     <div class="row">
@@ -250,7 +249,7 @@
                             <label for="salary">Current Salary</label>
                         </div>
                         <div class="col-9">
-                            <input type="text" id="salary" name="salary" >
+                            <input type="text" id="salary" name="salary">
                         </div>
                     </div>
                     <div class="row">
@@ -269,7 +268,7 @@
                         </div>
                     </div>
                     <div>
-                        <input type="checkbox" id="isCurrentJob" name="isCurrentJob" checked >
+                        <input type="checkbox" id="isCurrentJob" name="isCurrentJob" checked>
                         <label for="isCurrentJob">This is your current job</label>
                     </div>
                 </div>
@@ -283,11 +282,11 @@
                 <div>
                     <label for="resume"><b>Upload Resume</b></label><br>
                     <input id="resume" name="resume" type="file"
-                        style="margin-top: 6px; padding: 5px 5px 5px 0; border-radius: 2px; font-family: Verdana, Geneva, Tahoma, sans-serif;" >
+                        style="margin-top: 6px; padding: 5px 5px 5px 0; border-radius: 2px; font-family: Verdana, Geneva, Tahoma, sans-serif;">
                 </div>
                 <div style="width: fit-content; margin: auto;">
-                    <input type="submit" >
-                    <input type="reset" >
+                    <input type="submit">
+                    <input type="reset">
                 </div>
             </fieldset>
         </form>
